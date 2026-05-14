@@ -7,11 +7,11 @@
 ## Materia: Programacion 3
 
 ## Descripcion: 
-Desarrolle un programa en Java que permita registrar la información de 5 visitantes utilizando un arreglo.
+Desarrolle un programa en Java que permita registrar la información de 5 visitantes utilizando un ArrayList.
 El programa debe solicitar por teclado los siguientes datos de cada visitante: Nombre, Cédula, Edad
 Luego de registrar los 5 visitantes, el sistema debe mostrar en pantalla la información almacenada de todos los visitantes.
 Requisitos
-* Utilizar arreglos (arrays)
+* Utilizar ArrayList
 * Utilizar ciclos for
 * Utilizar entrada de datos con Scanner
 * Mostrar los datos organizados en consola
