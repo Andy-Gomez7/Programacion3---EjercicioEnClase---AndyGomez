@@ -1,0 +1,12 @@
+Estudiante: Andy Gomez
+Edad: 20
+Matricula: 1000-6215
+
+Estudiante: Juan Perez
+Edad: 25
+Matricula: 1000-2342
+
+Estudiante: Pedro Guillermo
+Edad: 31
+Matricula: 1000-8764
+
