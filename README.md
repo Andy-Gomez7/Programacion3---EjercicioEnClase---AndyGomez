@@ -50,7 +50,7 @@ Implementar un menú repetitivo
 Validar entradas incorrectas
 Usar métodos separados para cada funcionalidad
 
-## Trabajo en clase 3
+## Trabajo en clase 3 - Excepciones:
 
 Sistema de Registro de Estudiantes
 
@@ -70,6 +70,21 @@ Edad
 Índice académico
 
 El sistema deberá validar que los datos ingresados sean correctos antes de registrar al estudiante.
+
+## Trabajo en clase 4 - Archivos:
+
+Sistema de registro de estudiantes con archivos.
+
+Desarrollar un programa que guarde estudiantes en un archivo llamado Estudiante.txt
+
+objetivo: Aplicar los conceptos aprendidos sobre archivos.
+
+Debe desplegarse un menu de la siguiente forma:
+
+1- Agregar Estudiante
+2- Mostrar Estudiante
+3-Salir
+
 
 ## Tecnologias utilizadas: 
 - Java
