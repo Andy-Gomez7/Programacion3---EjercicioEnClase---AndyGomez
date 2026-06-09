@@ -83,8 +83,7 @@ Debe desplegarse un menu de la siguiente forma:
 
 1- Agregar Estudiante
 2- Mostrar Estudiante
-3-Salir
-
+3- Salir
 
 ## Tecnologias utilizadas: 
 - Java
