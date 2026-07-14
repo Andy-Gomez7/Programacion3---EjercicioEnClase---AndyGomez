@@ -16,7 +16,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import model.Cita;
@@ -123,51 +122,19 @@ public class SistemaMedicoController {
         CBEspecialidad.getItems().addAll("Dermatología", "Endocrinología", "Epidemiología", "Gastroenterología");
 
         CBMedico.getItems().addAll("Enzo fernandez","Nico Gonzales","Nicolas Tagliafico");
+
+        try {
+            archivo = new File("Citas.txt");
         
-        TColCodigo.setCellValueFactory(
-            new PropertyValueFactory("codigo")
-        );
-
-        TColPaciente.setCellValueFactory(
-            new PropertyValueFactory("paciente")
-        );
-
-        TColCedula.setCellValueFactory(
-            new PropertyValueFactory("cedula")
-        );
-
-        TColTelefono.setCellValueFactory(
-            new PropertyValueFactory("telefono")
-        );
-
-        TColMedico.setCellValueFactory(
-            new PropertyValueFactory("medico")
-        );
-
-        TColEspecialidad.setCellValueFactory(
-            new PropertyValueFactory("especialidad")
-        );
-
-        TColFecha.setCellValueFactory(
-            new PropertyValueFactory("fecha")
-        );
-
-        TColHora.setCellValueFactory(
-            new PropertyValueFactory("hora")
-        );
-
-        TColMotivoConslt.setCellValueFactory(
-            new PropertyValueFactory("motivoConsulta")
-        );
-
-        TColEstado.setCellValueFactory(
-            new PropertyValueFactory("estado")
-        );
-
-        TbVw.getColumns().addAll(TColCedula, TColCodigo, TColEspecialidad, TColEstado, TColFecha, TColHora, TColMedico, TColMotivoConslt, TColPaciente, TColTelefono);
-
-        archivo = new File("Citas.txt");
-        ArchUtil = new Archivoutil(archivo);
+            if (!archivo.exists()) {
+                archivo.createNewFile();
+            }
+        
+            ArchUtil = new Archivoutil(archivo);
+        
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         hbx.setStyle("-fx-background-color: skyblue");
     }

@@ -1,0 +1,4 @@
+12345;1234567;5678234;1234-23456;Nico Gonzales;Dermatología;2026-07-13;10:10;Tengo gripe;Programada
+
+12345;1234567;5678234;1234-23456;Nico Gonzales;Dermatología;2026-07-13;10:10;Tengo gripe;Programada
+

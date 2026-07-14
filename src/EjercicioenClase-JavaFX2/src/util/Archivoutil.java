@@ -23,8 +23,7 @@ public class Archivoutil {
         try {
             FileWriter write = new FileWriter(archivo, true);
             
-            write.write(linea);
-            write.write("\n");
+            write.write(linea+"\n\n");
             write.close();
         } catch (IOException e) {
             e.printStackTrace();
