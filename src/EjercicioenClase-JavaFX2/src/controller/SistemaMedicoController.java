@@ -16,6 +16,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import model.Cita;
@@ -117,6 +118,17 @@ public class SistemaMedicoController {
     private File archivo;
 
     public void initialize(){
+
+        TColCodigo.setCellValueFactory(new PropertyValueFactory<>("codigo"));
+        TColPaciente.setCellValueFactory(new PropertyValueFactory<>("paciente"));
+        TColCedula.setCellValueFactory(new PropertyValueFactory<>("cedula"));
+        TColTelefono.setCellValueFactory(new PropertyValueFactory<>("telefono"));
+        TColMedico.setCellValueFactory(new PropertyValueFactory<>("medico"));
+        TColEspecialidad.setCellValueFactory(new PropertyValueFactory<>("especialidad"));
+        TColFecha.setCellValueFactory(new PropertyValueFactory<>("fecha"));
+        TColHora.setCellValueFactory(new PropertyValueFactory<>("hora"));
+        TColMotivoConslt.setCellValueFactory(new PropertyValueFactory<>("motivoConsulta"));
+        TColEstado.setCellValueFactory(new PropertyValueFactory<>("estado"));
         CBEstado.getItems().addAll("Programada","Atendida","Cancelada");
 
         CBEspecialidad.getItems().addAll("Dermatología", "Endocrinología", "Epidemiología", "Gastroenterología");
