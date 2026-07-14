@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox fx:id="vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="30.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegistroController">
+   <children>
+      <Label fx:id="titulo" prefHeight="30.0" prefWidth="161.0" text="Escena 1 registro">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="200.0" />
+         </VBox.margin>
+      </Label>
+      <Button fx:id="btnCambiar" mnemonicParsing="false" onAction="#inicializarEstudiante" text="Inicializar Estudiante">
+         <VBox.margin>
+            <Insets left="205.0" />
+         </VBox.margin>
+      </Button>
+      <TextField fx:id="txtFNombre">
+         <VBox.margin>
+            <Insets left="150.0" right="150.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="txtFMatricula">
+         <VBox.margin>
+            <Insets left="150.0" right="150.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="txtFCarrera">
+         <VBox.margin>
+            <Insets left="150.0" right="150.0" />
+         </VBox.margin>
+      </TextField>
+   </children>
+</VBox>
